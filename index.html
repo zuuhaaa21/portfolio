@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fathima Zuha — Performance Marketer</title>
+  <meta name="description" content="Fathima Zuha — performance marketer and Meta Ads specialist.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="photos/image.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<section class="hero" id="hero" aria-label="Fathima Zuha — ID card">
+
+  <!-- ── copy layer (behind the badge) ── -->
+  <div class="copy">
+    <p class="eyebrow rise" style="--d:0"><i></i><span>Fathima Zuha<span class="lg"> · Performance Marketing</span></span></p>
+    <h1 class="rise" style="--d:1" id="title">Meet the marketer<span>behind the ROAS.</span></h1>
+
+    <p class="intro rise" style="--d:2">
+      <span class="en">I'm Fathima Zuha, a performance marketer who turns scroll-stopping Meta ads into measurable growth — from the first impression to the final conversion.</span>
+      <span class="sub">Meta Ads specialist. Full-funnel strategy, creative testing and tracking you can trust.</span>
+    </p>
+
+    <!-- Meta-ads twist: this card is a live ad, the visitor is the audience -->
+    <section class="camp rise" style="--d:3" id="camp" aria-label="Campaign: Contact Zuha">
+      <p class="camp-hd"><i id="campDot"></i><span id="campState">Campaign · Contact Zuha</span></p>
+      <p class="camp-note">This ID card is a live ad. Interact to see it count.</p>
+      <dl class="kpis">
+        <div><dt>Impressions</dt><dd><span id="kImp">00</span></dd></div>
+        <div><dt>Engagements</dt><dd><span id="kEng">00</span></dd></div>
+        <div><dt>Leads</dt><dd><span id="kLead">00</span></dd></div>
+      </dl>
+      <div class="learn" aria-hidden="true"><b id="lBar"></b></div>
+      <p class="learn-t"><span>Learning</span><span id="lTxt">00 / 50</span></p>
+      <ol class="px" id="px" aria-label="Pixel events">
+        <li data-ev="PageView">PageView</li>
+        <li data-ev="ViewContent">ViewContent</li>
+        <li data-ev="Lead">Lead</li>
+      </ol>
+    </section>
+
+    <p class="meta rise" style="--d:4"><i></i>Available for new campaigns</p>
+    <p class="mark" id="mark" aria-label="Fathima Zuha">Fathima Zuha</p>
+  </div>
+
+  <!-- ── badge ── -->
+  <div class="shadow" id="shadow" aria-hidden="true"></div>
+  <canvas id="strap" aria-hidden="true"></canvas>
+
+  <div class="hang" id="hang">
+    <!-- D-ring + swivel + lobster clasp (its hook passes through the card's slot) -->
+    <svg class="clasp" viewBox="0 0 60 84" aria-hidden="true">
+      <defs>
+        <linearGradient id="m1" x1="0" x2="1">
+          <stop offset="0" stop-color="#4b4e57"/><stop offset=".28" stop-color="#e9eaee"/>
+          <stop offset=".55" stop-color="#8d919b"/><stop offset=".8" stop-color="#d9dbe1"/>
+          <stop offset="1" stop-color="#3f424a"/>
+        </linearGradient>
+        <linearGradient id="m2" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/>
+          <stop offset="1" stop-color="#1c1d22" stop-opacity=".4"/>
+        </linearGradient>
+      </defs>
+      <!-- D-ring: its top bar runs inside the strap's fold, so only the two ends show,
+           coming out from under the strap's edges (the strap spans x 8 → 52) -->
+      <g id="dRing"><path d="M51.9 4.2 H54.4 Q57.6 4.2 55.6 7.4 L37.8 20.6 Q30 26.4 22.2 20.6 L4.4 7.4 Q2.4 4.2 5.6 4.2 H8.1" fill="none" stroke="url(#m1)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="butt"/></g>
+      <!-- swivel + claw turn together on the ring's tip (transform set from JS) -->
+      <g id="clawG">
+      <!-- swivel eye + barrel -->
+      <circle cx="30" cy="24.6" r="3.4" fill="none" stroke="url(#m1)" stroke-width="2"/>
+      <rect x="26.6" y="27.6" width="6.8" height="8.6" rx="2" fill="url(#m1)"/>
+      <rect x="26.6" y="27.6" width="6.8" height="8.6" rx="2" fill="url(#m2)"/>
+      <rect x="25.8" y="31.2" width="8.4" height="1.3" rx=".6" fill="#2f3138" opacity=".5"/>
+      <!-- lobster claw -->
+      <path d="M27.4 36.4 H32.6 C40.6 43.4 41.6 59.6 33.8 70.4 Q30 75.2 26.2 70.4 C18.4 59.6 19.4 43.4 27.4 36.4Z" fill="url(#m1)"/>
+      <path d="M27.4 36.4 H32.6 C40.6 43.4 41.6 59.6 33.8 70.4 Q30 75.2 26.2 70.4 C18.4 59.6 19.4 43.4 27.4 36.4Z" fill="url(#m2)"/>
+      <path d="M30 44 C25.4 50 25 61 28.6 68.4" fill="none" stroke="#24252b" stroke-opacity=".55" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M33.6 45.6 C36.2 51 36 59 33 66" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width=".8" stroke-linecap="round"/>
+      <circle cx="30" cy="41" r="1.5" fill="#2b2c33" opacity=".7"/>
+      <!-- hook through the slot -->
+      <path d="M27.2 71.6 Q26.4 80.6 30 81 Q33.6 80.6 32.8 71.6" fill="none" stroke="url(#m1)" stroke-width="2.4" stroke-linecap="round"/>
+      </g>
+    </svg>
+
+    <div class="card3d">
+      <div class="card" id="card">
+        <!-- front -->
+        <section class="face front" aria-label="ID card front">
+          <span class="slot" aria-hidden="true"></span>
+          <div class="row"><span>Sponsored · Meta Ads</span><span>#01</span></div>
+          <div class="photo"><img id="cardImg" src="photos/image.png" alt="Portrait of Fathima Zuha" draggable="false" decoding="async"></div>
+          <p class="name">Fathima Zuha</p>
+          <p class="role">Performance Marketer · Meta Ads</p>
+          <div class="foot">
+            <span>View contact</span>
+            <button class="go" id="toBack" type="button" aria-label="Show contact details">
+              <svg viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4.2M9 3V7.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </section>
+
+        <!-- back -->
+        <section class="face back" aria-label="ID card back — contact">
+          <span class="slot" aria-hidden="true"></span>
+          <div class="row"><span>Contact</span><span>#01</span></div>
+          <p class="big">Fathima Zuha T P</p>
+          <p class="en">Performance Marketer · Meta Ads Specialist</p>
+          <div class="contact">
+            <button class="crow" type="button" data-copy="+917736919060" aria-label="Copy phone number">
+              <span class="k">Phone</span><span class="v">+91 77369 19060</span>
+              <svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><rect x="5.5" y="5.5" width="7.5" height="7.5" rx="1.6"/><path d="M10.5 3.5V3.2A1.7 1.7 0 0 0 8.8 1.5H4.2A1.7 1.7 0 0 0 2.5 3.2v4.6A1.7 1.7 0 0 0 4.2 9.5h.3"/></svg>
+              <svg class="ic ck" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.2 8.4l3 3 6.6-6.8"/></svg>
+            </button>
+            <button class="crow" type="button" data-copy="zuhafathim23@gmail.com" aria-label="Copy email address">
+              <span class="k">Email</span><span class="v">zuhafathim23@gmail.com</span>
+              <svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><rect x="5.5" y="5.5" width="7.5" height="7.5" rx="1.6"/><path d="M10.5 3.5V3.2A1.7 1.7 0 0 0 8.8 1.5H4.2A1.7 1.7 0 0 0 2.5 3.2v4.6A1.7 1.7 0 0 0 4.2 9.5h.3"/></svg>
+              <svg class="ic ck" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.2 8.4l3 3 6.6-6.8"/></svg>
+            </button>
+            <a class="crow" href="https://www.linkedin.com/in/fathima-zuha-/" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
+              <span class="k">LinkedIn</span><span class="v">in/fathima-zuha-</span>
+              <svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M11 5H6.6M11 5V9.4"/></svg>
+            </a>
+          </div>
+          <div class="issue">
+            <svg class="qr" viewBox="0 0 29 29" role="img" aria-label="QR code to LinkedIn profile"><path stroke="currentColor" d="M0 0.5h7m1 0h1m2 0h1m1 0h2m1 0h5m1 0h7M0 1.5h1m5 0h1m1 0h1m4 0h2m1 0h1m1 0h1m3 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m2 0h1m1 0h3m4 0h1m3 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h2m2 0h1m4 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m2 0h4m2 0h1m3 0h1m2 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m2 0h2m1 0h3m3 0h2m2 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M8 7.5h2m7 0h3M0 8.5h1m1 0h2m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m4 0h1m2 0h1m1 0h2M4 9.5h2m1 0h1m3 0h3m2 0h4m1 0h4m3 0h1M6 10.5h3m2 0h2m1 0h1m1 0h1m1 0h1m1 0h5m1 0h2M2 11.5h2m1 0h1m1 0h2m1 0h1m2 0h1m4 0h1m1 0h1m1 0h3m3 0h1M0 12.5h2m3 0h2m1 0h2m1 0h1m1 0h2m2 0h1m1 0h1m5 0h2M1 13.5h2m7 0h2m2 0h3m2 0h1m2 0h2m2 0h3M0 14.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m5 0h2m2 0h2m1 0h3M0 15.5h3m2 0h1m1 0h4m3 0h2m7 0h2m2 0h1M1 16.5h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h4m2 0h4m2 0h2m1 0h1M1 17.5h2m1 0h2m2 0h2m5 0h1m1 0h1m2 0h1m2 0h1m1 0h3M0 18.5h1m2 0h2m1 0h4m1 0h2m1 0h2m1 0h1m4 0h2m2 0h1M5 19.5h1m2 0h1m2 0h1m5 0h1m4 0h1m3 0h1M1 20.5h2m3 0h1m3 0h1m4 0h3m1 0h8M8 21.5h3m1 0h2m2 0h3m1 0h1m3 0h5M0 22.5h7m1 0h1m1 0h2m1 0h1m4 0h3m1 0h1m1 0h2m1 0h1M0 23.5h1m5 0h1m1 0h1m1 0h2m1 0h2m3 0h1m1 0h1m3 0h2M0 24.5h1m1 0h3m1 0h1m8 0h3m2 0h5m1 0h3M0 25.5h1m1 0h3m1 0h1m1 0h4m1 0h5m1 0h3m2 0h2m2 0h1M0 26.5h1m1 0h3m1 0h1m1 0h1m1 0h3m1 0h1m2 0h2m4 0h1m2 0h1m1 0h1M0 27.5h1m5 0h1m2 0h2m2 0h3m2 0h1m1 0h4m1 0h1m1 0h1M0 28.5h7m1 0h1m1 0h2m2 0h1m3 0h5m2 0h1m1 0h1"/></svg>
+            <div class="iss"><span class="scan">Scan to connect</span><span class="note">Meta Ads · Full-funnel · Creative testing</span></div>
+            <div class="bt">
+              <span class="k">Issued 2026</span>
+              <button class="go" id="toFront" type="button" aria-label="Show card front">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M9 3L3 9M3 9H7.8M3 9V4.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- section dots -->
+  <nav class="stn rise" style="--d:5" aria-label="Sections">
+    <button type="button" data-go="hero" aria-current="true"><i></i><span class="stn-t">Card</span></button>
+    <button type="button" data-go="about"><i></i><span class="stn-t">About</span></button>
+    <button type="button" data-go="experience"><i></i><span class="stn-t">Experience</span></button>
+    <button type="button" aria-disabled="true"><i></i><span class="stn-t">Contact · soon</span></button>
+  </nav>
+
+  <!-- scroll cue -->
+  <button class="peek rise" style="--d:6" type="button" data-go="about" aria-label="Scroll to About">
+    <svg viewBox="0 0 20 10" aria-hidden="true"><path d="M3 2l7 6 7-6"/></svg>
+    <svg viewBox="0 0 20 10" aria-hidden="true"><path d="M3 2l7 6 7-6"/></svg>
+    <svg viewBox="0 0 20 10" aria-hidden="true"><path d="M3 2l7 6 7-6"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</section>
+
+<!-- ── About ──
+     A tall track with the section pinned inside it: scrolling through the track
+     plays the scene (lights → name → headline → Zuha → facts), and rewinds on the way back. -->
+<section class="about-track" id="about" aria-labelledby="aboutTitle">
+  <div class="about" id="aboutStage">
+    <div class="room" id="aRoom" aria-hidden="true"><div class="spot"></div></div>
+    <p class="amark" id="amark" aria-hidden="true">About Zuha</p>
+
+    <div class="a-grid">
+      <div class="a-text">
+        <p class="eyebrow" data-sc="eyebrow"><i></i>About · Fathima Zuha</p>
+        <h2 class="a-title" id="aboutTitle">I help brands reach the right people<span class="hl">and turn them into leads.</span></h2>
+        <div class="a-copy">
+          <p class="a-lead" data-sc="lead">I'm Fathima Zuha, a digital marketing specialist focused on Meta Ads. I plan and run Facebook and Instagram campaigns with one outcome in mind: qualified leads.</p>
+          <p data-sc="body">Most of my work is audience targeting, ad creative and optimisation — writing the hook, building AI-assisted visuals, testing what lands, and reading the numbers closely enough to know what to change next.</p>
+        </div>
+        <dl class="a-facts" id="aFacts">
+          <div><dt>Focus</dt><dd>Meta Ads · Lead generation</dd></div>
+          <div><dt>Channels</dt><dd>Facebook, Instagram</dd></div>
+          <div><dt>Craft</dt><dd>Audience targeting, campaign optimisation, ad creative</dd></div>
+        </dl>
+        <p class="a-how" data-sc="how"><span>How I work</span>Clear communicator · Team player · Organised · Adaptable · Detail-minded</p>
+      </div>
+
+      <figure class="a-fig" id="aFig">
+        <div class="a-floor" id="aFloor" aria-hidden="true"></div>
+        <div class="a-body" id="aBody">
+          <img id="aImg" src="photos/about-zuha.png" alt="Fathima Zuha standing with her arms crossed" width="498" height="1665" decoding="async">
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- ── Experience ──
+     A desk under the lamp. Scrolling deals her SINAURA work onto it as four "ad set" cards,
+     like the reference's pile of work cards. Once dealt they can be dragged and thrown around the desk. Phones: the cards deal into a column as they scroll into view. -->
+<section class="x-track" id="experience" aria-labelledby="expTitle">
+  <div class="xp" id="xStage">
+    <div class="x-room" aria-hidden="true"><div class="x-pool"></div></div>
+    <p class="xmark" id="xmark" aria-hidden="true">Experience</p>
+
+    <div class="x-text">
+      <p class="eyebrow" data-x="eyebrow"><i></i>Experience · Mar 2026 — Present</p>
+      <h2 class="x-title" id="expTitle">Running Meta Ads<span class="hl">for SINAURA.</span></h2>
+      <p class="x-lead" data-x="lead">Digital Marketing / Meta Ads Specialist. I manage digital advertising campaigns and support lead generation, from who sees the ad to what it says and how it performs.</p>
+      <dl class="x-rows" id="xRows">
+        <div><dt>Company</dt><dd>SINAURA</dd></div>
+        <div><dt>Role</dt><dd>Digital Marketing / Meta Ads Specialist</dd></div>
+        <div><dt>Since</dt><dd>March 2026 – Present</dd></div>
+        <div><dt>Status</dt><dd class="x-live"><i></i>Current</dd></div>
+      </dl>
+      <p class="x-hint" data-x="ctl">Drag a card · throw it</p>
+    </div>
+
+    <ul class="x-desk" id="xDesk" aria-label="What I do at SINAURA">
+      <li class="xc">
+        <div class="xc-hd"><span>Ad set 01</span></div>
+        <svg class="xc-art" viewBox="0 0 240 96" aria-hidden="true">
+          <path class="d" d="M20 14h200l-46 34h-108z"/><path class="d" d="M66 48h108l-30 22h-48z"/><path class="d f" d="M96 70h48l-12 14h-24z"/>
+        </svg>
+        <h3>Lead generation campaigns</h3>
+        <p>Managed Facebook and Instagram lead generation campaigns.</p>
+        <div class="xc-ft"><span>Facebook</span><span>Instagram</span><span>Leads</span></div>
+      </li>
+      <li class="xc">
+        <div class="xc-hd"><span>Ad set 02</span></div>
+        <svg class="xc-art" viewBox="0 0 240 96" aria-hidden="true">
+          <circle class="d" cx="120" cy="48" r="40"/><circle class="d" cx="120" cy="48" r="26"/><circle class="d f" cx="120" cy="48" r="11"/>
+          <path class="d" d="M40 48h28M172 48h28M120 2v6M120 88v6"/>
+        </svg>
+        <h3>Targeting &amp; optimisation</h3>
+        <p>Handled audience targeting, campaign optimisation and performance monitoring.</p>
+        <div class="xc-ft"><span>Audiences</span><span>Optimisation</span></div>
+      </li>
+      <li class="xc xc--ink">
+        <div class="xc-hd"><span>Ad set 03</span></div>
+        <svg class="xc-art" viewBox="0 0 240 96" aria-hidden="true">
+          <rect class="d" x="44" y="8" width="44" height="80" rx="6"/><rect class="d f" x="98" y="8" width="44" height="80" rx="6"/><rect class="d" x="152" y="8" width="44" height="80" rx="6"/>
+          <path class="d" d="M108 70l10-14 8 9 6-6 8 11"/>
+        </svg>
+        <h3>AI-assisted creatives</h3>
+        <p>Developed AI-assisted marketing creatives to support advertising campaigns.</p>
+        <div class="xc-ft"><span>Creative</span><span>AI</span></div>
+      </li>
+      <li class="xc">
+        <div class="xc-hd"><span>Ad set 04</span></div>
+        <svg class="xc-art" viewBox="0 0 240 96" aria-hidden="true">
+          <path class="d" d="M20 86h200M20 86V10"/><path class="d f" d="M28 78c30-4 44-18 70-24s40-6 60-24 36-20 56-22"/>
+        </svg>
+        <h3>Conversion-focused</h3>
+        <p>Focused on improving campaign performance and high conversion rates through effective advertising strategies.</p>
+        <div class="xc-ft"><span>Performance</span><span>Conversions</span></div>
+      </li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
